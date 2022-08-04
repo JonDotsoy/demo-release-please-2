@@ -3,7 +3,7 @@ on:
     branches:
       - main
     paths:
-      - "a"
+      - "./a/**"
 name: release-please
 jobs:
   release-please:
@@ -15,4 +15,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           package-name: release-please-action
           repo-url: ${{ env.GITHUB_REPOSITORY }}
-          path: "a"
+          path: "./a"

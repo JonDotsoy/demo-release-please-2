@@ -19,5 +19,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: node
           package-name: ${{ matrix.package }}
+          path: ${{ matrix.package }}
           repo-url: ${{ env.GITHUB_REPOSITORY }}
           monorepo-tags: true

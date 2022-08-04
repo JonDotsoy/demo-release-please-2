@@ -2,8 +2,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - "./a/**"
 name: release-please
 jobs:
   release-please:
